@@ -1,0 +1,98 @@
+.ball-content {
+  position: absolute;
+  z-index: 1;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.ball1 {
+  animation: ballScroll1 12s infinite;
+}
+
+.ball2 {
+  animation: ballScroll2 12s infinite;
+}
+
+.ball3 {
+  animation: ballScroll3 12s infinite;
+}
+
+@keyframes ballScroll1 {
+  0% {
+    background-color: rgb(212, 37, 37);
+    transform: translateX(200px) translateY(150px) scale(1);
+  }
+  25% {
+    background-color: rgb(49, 196, 98);
+    transform: translateX(-400px) translateY(-200px) scale(0.5);
+  }
+  50% {
+    background-color: rgb(94, 8, 105);
+    transform: translateX(-600px) translateY(200px) scale(0.3);
+  }
+  75% {
+    background-color: rgb(4, 156, 63);
+    transform: translateX(500px) translateY(-150px) scale(0.7);
+  }
+  100% {
+    background-color: rgb(212, 37, 37);
+    transform: translateX(200px) translateY(150px) scale(1);
+  }
+}
+
+@keyframes ballScroll2 {
+  0% {
+    background-color: rgb(25, 23, 172);
+    transform: translateX(534px) translateY(63px) scale(1);
+  }
+  25% {
+    background-color: rgb(233, 10, 203);
+    transform: translateX(-581px) translateY(113px) scale(0.5);
+  }
+  50% {
+    background-color: rgb(248, 114, 96);
+    transform: translateX(311px) translateY(-166px) scale(0.3);
+  }
+  75% {
+    background-color: rgb(182, 192, 37);
+    transform: translateX(-390px) translateY(150px) scale(0.7);
+  }
+  100% {
+    background-color: rgb(25, 23, 172);
+    transform: translateX(534px) translateY(63px) scale(1);
+  }
+}
+
+@keyframes ballScroll3 {
+  0% {
+    background-color: rgb(204, 151, 151);
+    transform: translateX(354px) translateY(23px) scale(1);
+  }
+  25% {
+    background-color: rgb(49, 196, 98);
+    transform: translateX(-481px) translateY(143px) scale(0.5);
+  }
+  50% {
+    background-color: rgb(113, 17, 126);
+    transform: translateX(261px) translateY(-126px) scale(0.3);
+  }
+  75% {
+    background-color: rgb(182, 192, 37);
+    transform: translateX(-190px) translateY(20px) scale(0.7);
+  }
+  100% {
+    background-color: rgb(204, 151, 151);
+    transform: translateX(354px) translateY(23px) scale(1);
+  }
+}

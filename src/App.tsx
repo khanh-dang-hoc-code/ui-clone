@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useRef, useState } from "react";
+import Header from "./compenent/header";
+import "./App.css";
+import changeTheme from "./compenent/assessts/svgIcons/lightbulb-solid.svg";
+import Ball from "./compenent/ball";
+import { Carousel } from "react-responsive-carousel";
+import Banner from "./compenent/banner";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper-app">
+      <div className="select-themes">
+        <img
+          className="select-themes-icon"
+          src={changeTheme}
+          alt="Change Themes"
+        />
+      </div>
+      <div className="app">
+        <Header />
+        <Banner />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
