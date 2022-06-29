@@ -3,6 +3,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Slider.css";
 
+// import Reaaact from '../../assessts/'
+
 const Slider = () => {
   return (
     <div className="slider">
